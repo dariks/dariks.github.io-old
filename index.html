@@ -6,9 +6,33 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/popup.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet" type="text/css" href="./assets/css/cookieconsent.min.css" />
+<script src="./assets/js/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#237afc"
+    },
+    "button": {
+      "background": "#fff",
+      "text": "#237afc"
+    }
+  },
+  "theme": "edgeless",
+  "content": {
+    "message": "Um diese Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können werden Cookies verwendet. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu.",
+    "dismiss": "Alles Klar",
+    "link": "Datenschutzerklärung",
+    "href": "#impressum"
+  }
+})});
+</script>
 	</head>
 	<body class="is-loading">
 
@@ -26,10 +50,6 @@
 							<ul class="icons">
 									<li><a href="mailto:info@rippen-ks.de" class="fa-at">Mail</a></li>
 									<li><a target="_blank" href="https://github.com/dariks" class="fa-github">Github</a></li>
-									<li><a target="_blank" href="https://www.instagram.com/daniel9890/" class="fa-instagram">Instagram</a></li>
-<!--
-                                    <li><a target="_blank" href="https://www.facebook.com/danielrippen" class="fa-facebook">Facebook</a></li>
--->
 							</ul>
 						</footer>
                         <header>
@@ -41,11 +61,34 @@
 					<footer id="footer">
 						<ul class="copyright">
 							<li>&copy; 2017 Daniel Rippen</li>
+                            <li><a href="#impressum">Impressum</li>
 						</ul>
 					</footer>
 
 			</div>
 
+			<div id="impressum" class="overlay">
+				<!-- Main -->
+					<section id="main">
+						<header>
+                            <a class="close" href="#">&times;</a>
+							<h1>Impressum</h1>
+                            <div class="text-parent">
+                            <div class="content">
+<p>Angaben gemäß § 5 TMG</p><p>Daniel Rippen<br> 
+Adresse auf Anfrage via Email
+</p><p> <strong>Vertreten durch: </strong><br>
+Max Muster<br>
+</p><p><strong>Kontakt:</strong> <br>
+Telefon: 01234-789456<br>
+Fax: 1234-56789<br>
+E-Mail: <a href='mailto:max@muster.de'>max@muster.de</a></br></p>
+<p><strong>Haftungsausschluss: </strong><br><strong>Haftung für Links</strong><br><br>
+Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.<br><br><strong>Google Analytics</strong><br><br>
+Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (''Google''). Google Analytics verwendet sog. ''Cookies'', Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglicht. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website (einschließlich Ihrer IP-Adresse) wird an einen Server von Google in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten für die Websitebetreiber zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Sie können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.</p><br> 
+Impressum vom <a href="http://www.impressum-generator.de">impressum-generator.de</a> der <a href="http://www.kanzlei-hasselbach.de/standorte/bonn/">Kanzlei Hasselbach Rechtsanwälte, Bonn</a>
+                             </div>
+                            </div>
 		<!-- Scripts -->
         <!-- Google Analytics -->
         <script>
@@ -67,6 +110,8 @@
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
 			</script>
-
+						</header>
+					</section>
+            </div>
 	</body>
 </html>
