@@ -1,1 +1,1 @@
-# dariks.github.io // rippen-ks.de
+# dariks.github.io // rippen-ks.de // danielrippen.de
